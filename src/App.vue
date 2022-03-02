@@ -1,19 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo_flix.svg" />
+    <MainHeader />
+    <SearchResults />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainHeader from "./components/MainHeader.vue";
+import SearchResults from "./components/SearchResults.vue";
+import "./style.css";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    MainHeader,
+    SearchResults,
+  },
+};
 </script>
 
 <style>
@@ -22,7 +26,12 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
+
+  width: 1100px;
+  margin: 0 auto;
+}
+img {
+  width: 50%;
 }
 </style>
